@@ -1,7 +1,7 @@
 import { Component, ViewChild, ViewContainerRef, ɵrenderComponent as renderComponent, Inject, Injector, ComponentFactoryResolver } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AuthLibService } from 'auth-lib';
-import { I18NService } from 'ui-sdk/i18n';
+import { I18NService } from 'ui-sdk';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,7 @@ export class AppComponent {
   constructor(private service: AuthLibService, http: HttpClient, private i18nservice: I18NService) {
     this.service.login('Max1', null);
     this.i18nservice.login("ch");
+    console.log(this.i18nservice.lang)
   }
 
 }

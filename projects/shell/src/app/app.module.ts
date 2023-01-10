@@ -8,6 +8,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthLibModule } from 'auth-lib';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ButtonModule, I18nModule } from 'ui-sdk';
+import { CardComponent } from 'ui-sdk';
+import { UiSdkModule } from 'ui-sdk';
+import { SharedLibModule } from 'shared-lib';
 // import { SharedLibModule } from 'projects/shared-lib/src/public-api';
 
 @NgModule({
@@ -17,6 +21,11 @@ import { HttpClientModule } from '@angular/common/http';
     // SharedLibModule,
     HttpClientModule,
     FormsModule,
+    ButtonModule,
+    CardComponent,
+    UiSdkModule,
+    SharedLibModule,
+    I18nModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
   declarations: [

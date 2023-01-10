@@ -9,7 +9,10 @@ module.exports = withModuleFederationPlugin({
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    '@angular/core': { eager: true, singleton: true },
+        '@angular/common': { eager: true, singleton: true },
+        '@angular/router': { eager: true, singleton: true }
   },
+  sharedMappings: ['ui-sdk', "ui-sdk/card", "ui-sdk/button"]
 
 });

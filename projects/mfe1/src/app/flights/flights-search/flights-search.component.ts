@@ -10,6 +10,6 @@ import { I18NService } from 'ui-sdk/i18n';
 export class FlightsSearchComponent {
   constructor(private service: AuthLibService, private i18nservice: I18NService) {
     console.log('User Name', this.service.user);
-    console.log("Language is", i18nservice.lang);
+    console.log("MFE Language is", i18nservice.lang);
   }
 }

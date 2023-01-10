@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UiSdkService } from './ui-sdk.service';
 
 @Component({
   selector: 'lib-ui-sdk',
@@ -12,7 +13,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UiSdkComponent implements OnInit {
 
-  constructor() { }
+  constructor(uisdkservice: UiSdkService) { 
+    console.log("Inside", uisdkservice);
+  }
 
   ngOnInit(): void {
   }

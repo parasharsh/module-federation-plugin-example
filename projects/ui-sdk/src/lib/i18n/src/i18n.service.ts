@@ -11,7 +11,9 @@ export class I18NService {
     return this.language;
   }
 
-  constructor() { }
+  constructor() { 
+    console.log("Initialized");
+  }
 
   public login(lang: string): void {
     // Authentication for **honest** users TM. (c) Manfred Steyer

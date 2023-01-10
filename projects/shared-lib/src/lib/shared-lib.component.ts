@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { I18NService } from 'ui-sdk';
 
 @Component({
   selector: 'lib-shared-lib',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SharedLibComponent implements OnInit {
 
-  constructor() { }
+  constructor(i18nService:I18NService) { }
 
   ngOnInit(): void {
   }

@@ -2,6 +2,8 @@
  * Public API Surface of ui-sdk
  */
 
-export * from './lib/ui-sdk.service';
-export * from './lib/ui-sdk.component';
-export * from './lib/ui-sdk.module';
+export * from './lib/module';
+export * from './lib/i18n';
+export * from './lib/card';
+export * from './lib/button';
+
